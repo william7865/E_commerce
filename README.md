@@ -1,11 +1,27 @@
-Il faut :
+# Simple PHP Project
+
+=====================================
+This is a simple PHP project that uses composer to manage dependencies.
+=====================================
+
+## Installation
+
+If you don't have Composer installed, you can install it by typing this command :
+
 ```bash
-sudo nano /etc/apache2/sites-available/000-default.conf
+sudo apt-get install composer
 ```
-Puis
+
+Then, you can install the project dependencies by running this command :
+
+```bash
+composer install
 ```
-# chemin absolu du dossier
-<Directory /var/www/html/crepe_waou/public>
-    AllowOverride All
-</Directory>
+
+## Start server using php
+
+```bash
+php -S localhost:5001 -t public
 ```
+
+# You can now access the project at `http://localhost:5001` in your browser.

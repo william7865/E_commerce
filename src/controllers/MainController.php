@@ -30,7 +30,9 @@ class MainController
         // Inclut la vue demandée
         $viewFile = __DIR__ . '/../views/' . $view . '.php';
         if (file_exists($viewFile)) {
+            require_once __DIR__ . '/../views/partials/header.php';
             require_once $viewFile;
+            require_once __DIR__ . '/../views/partials/footer.php';
         } else {
             echo "View not found: $view";
         }
