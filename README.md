@@ -1,8 +1,6 @@
 # Simple PHP Project
 
-=====================================
-This is a simple PHP project that uses composer to manage dependencies.
-=====================================
+# This is a simple PHP project that uses composer to manage dependencies.
 
 ## Installation
 
