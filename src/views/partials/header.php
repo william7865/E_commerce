@@ -9,19 +9,19 @@
 <body>
     <header class="header">
         <div class="logo">
-            <h1>KELEN <span>PARIS</span></h1>
+            <h1><a href ="./">KELEN <span>PARIS</span></a></h1>
         </div>
         <nav class="navbar">
             <ul>
                 <li><a href="#">Femme</a></li>
-                <li><a href="#">Homme</a></li>
+                <li><a href="man">Homme</a></li>
                 <li><a href="#">Black Friday</a></li>
             </ul>
         </nav>
         <div class="header-icons">
             <a href="#"><img src="../images/user.png" alt="Profil"></a>
             <a href="#"><img src="../images/favorie.png" alt="Favoris"></a>
-            <a href="#"><img src="../images/cart.png" alt="Panier"></a>
+            <a href="panier"><img src="../images/cart.png" alt="Panier"></a>
         </div>
         
     </header>

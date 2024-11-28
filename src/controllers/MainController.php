@@ -12,6 +12,11 @@ class MainController
     {
         $this->render('man');
     }
+      // Page Panier
+      public function panier()
+      {
+          $this->render('panier');
+      }
 
     // Page "About"
     public function about()
