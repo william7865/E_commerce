@@ -7,6 +7,11 @@ class MainController
     {
         $this->render('home');
     }
+    // Page Man
+    public function man()
+    {
+        $this->render('man');
+    }
 
     // Page "About"
     public function about()

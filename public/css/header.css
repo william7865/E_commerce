@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #E74C3C;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    font-size: 16px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #E74C3C;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espacement entre les icônes */
+}
+
+.header-icons a {
+    display: inline-block;
+    width: 24px; /* Largeur des icônes */
+    height: 24px; /* Hauteur des icônes */
+}
+
+.header-icons img {
+    width: 100%; /* L'image remplit le conteneur */
+    height: 100%; /* L'image remplit le conteneur */
+    object-fit: contain; /* Préserve les proportions de l'icône */
+    background: none; /* Supprime tout fond résiduel */
+}
+
+
+.header-icons a:hover {
+    transform: scale(1.2); /* Agrandit légèrement les icônes au survol */
+}
