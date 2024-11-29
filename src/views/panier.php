@@ -27,7 +27,7 @@
                             <img src="../images/product.jpg" alt="Produit" class="panier-imgage">
                         </td>
                         <td>
-                        Manteau haute qualité<br>
+                            Manteau haute qualité
                         </td>
                         <td>
                             <input type="number" value="1" class="quantite">
@@ -51,8 +51,7 @@
 
             <div class="panier-final">
                 <div class="totaux">
-                    <p>Total produits TTC : <span>99,00 €</span></p>
-                    <p>Total TTC : <span>99,00 €</span></p>
+                    <p>Total: <span>99,00 €</span></p>
                 </div>
                 <button class="buy">PAYER</button>
             </div>

@@ -10,7 +10,7 @@
         <div class="banner">
             <div class="banner-item">
                 <img src="../images/femme2.jpg" alt="Femme">
-                <a href="#" class="button">FEMME</a>
+                <a href="woman" class="button">FEMME</a>
             </div>
             <div class="banner-item">
                 <img src="../images/homme2.jpg" alt="Homme">

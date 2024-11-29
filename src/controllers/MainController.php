@@ -11,6 +11,10 @@ class MainController
     public function man()
     {
         $this->render('man');
+    }  // Page Woman
+    public function woman()
+    {
+        $this->render('woman');
     }
       // Page Panier
       public function panier()

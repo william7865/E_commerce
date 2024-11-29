@@ -88,9 +88,8 @@ select {
     margin: 10px 0;
 }
 
-/* Bouton payer */
 .buy {
-    background-color: #28a745;
+    background-color:  #E74C3C;
     color: white;
     padding: 15px 30px;
     font-size: 16px;
@@ -100,5 +99,5 @@ select {
 }
 
 .buy:hover {
-    background-color: #218838;
+    background-color:  #c75245;
 }
