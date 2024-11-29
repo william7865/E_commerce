@@ -21,7 +21,16 @@ class MainController
       {
           $this->render('panier');
       }
-
+        // Page Connexion
+      public function connexion()
+      {
+          $this->render('connexion');
+      }
+        // Page Inscription
+      public function inscription()
+      {
+          $this->render('inscription');
+      }
     // Page "About"
     public function about()
     {

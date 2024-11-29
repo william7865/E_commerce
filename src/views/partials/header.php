@@ -19,8 +19,8 @@
             </ul>
         </nav>
         <div class="header-icons">
-            <a href="#"><img src="../images/user.png" alt="Profil"></a>
-            <a href="#"><img src="../images/favorie.png" alt="Favoris"></a>
+            <a href="connexion"><img src="../images/user.png" alt="Profil"></a>
+            <a href="favorie"><img src="../images/favorie.png" alt="Favoris"></a>
             <a href="panier"><img src="../images/cart.png" alt="Panier"></a>
         </div>
         
