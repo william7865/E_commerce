@@ -45,6 +45,23 @@ ul {
     transition: color 0.3s;
 }
 
+.navbar ul li button img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background: none;
+
+}
+.navbar ul li button {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background:none;
+    border: none;
+    cursor: pointer;
+}
+
+
 .navbar ul li a:hover {
     color: #E74C3C;
 }
@@ -67,6 +84,7 @@ ul {
     object-fit: contain;
     background: none;
 }
+
 
 
 .header-icons a:hover {

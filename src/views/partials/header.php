@@ -15,12 +15,12 @@
             <ul>
                 <li><a href="woman">Femme</a></li>
                 <li><a href="man">Homme</a></li>
-                <li><a href="#">Black Friday</a></li>
+                <li><input type="text" placeholder="Rechercher"></li>
+                <li><button><img src="../images/loupe.png"></button></li>
             </ul>
         </nav>
         <div class="header-icons">
             <a href="connexion"><img src="../images/user.png" alt="Profil"></a>
-            <a href="favorie"><img src="../images/favorie.png" alt="Favoris"></a>
             <a href="panier"><img src="../images/cart.png" alt="Panier"></a>
         </div>
         
