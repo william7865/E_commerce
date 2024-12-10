@@ -10,8 +10,9 @@
 </body>
 </html>
 <main class="page-produits">
-        <h2>Collection Homme</h2>
-        <div class="grille-produits">
+    <h2>Collection Homme</h2>
+    <div class="grille-produits">
+        <a href="details" class="produit-link">
             <div class="produit">
                 <img src="../images/manteau.webp" alt="Manteau">
                 <h3>Manteau haute qualité</h3>
@@ -21,6 +22,8 @@
                     <span><img src="../images/cart.png"></span>
                 </div>
             </div>
+        </a>
+        <a href="details" class="produit-link">
             <div class="produit">
                 <img src="../images/manteau.webp" alt="Manteau">
                 <h3>Manteau haute qualité</h3>
@@ -30,6 +33,8 @@
                     <span><img src="../images/cart.png"></span>
                 </div>
             </div>
+        </a>
+        <a href="details" class="produit-link">
             <div class="produit">
                 <img src="../images/manteau.webp" alt="Manteau">
                 <h3>Manteau haute qualité</h3>
@@ -39,6 +44,8 @@
                     <span><img src="../images/cart.png"></span>
                 </div>
             </div>
+        </a>
+        <a href="details" class="produit-link">
             <div class="produit">
                 <img src="../images/manteau.webp" alt="Manteau">
                 <h3>Manteau haute qualité</h3>
@@ -48,5 +55,6 @@
                     <span><img src="../images/cart.png"></span>
                 </div>
             </div>
-        </div>
+        </a>
+    </div>
 </main>

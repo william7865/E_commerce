@@ -29,8 +29,14 @@ class MainController
         // Page Inscription
       public function inscription()
       {
-          $this->render('inscription');
+        
+        $this->render('inscription');
       }
+    // Page Details
+    public function details()
+        {
+        $this->render('details');
+    }
     // Page "About"
     public function about()
     {
