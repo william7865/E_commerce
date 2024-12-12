@@ -1,60 +1,48 @@
+<?php
+require_once __DIR__ . '/../models/Product.php';
+
+use App\Models\Product;
+
+$productModel = new Product();
+
+// ID de la catégorie "Homme"
+$idCategory = 1;
+// Récupérer les produits de la catégorie "Homme"
+$products = $productModel->findByCategory($idCategory);
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produits Homme</title>
     <link rel="stylesheet" href="../css/man.css">
 </head>
 <body>
-    
+    <h1>Collections Homme</h1>
+    <?php if (!empty($products)): ?>
+        <div class="product-list">
+            <?php foreach ($products as $product): ?>
+                <div class="product-card">
+                    <div class="product-image">
+                        <a href="details?id=<?= $product->getId() ?>">
+                            <img src="<?= $product->getPicture() ?>" alt="<?= $product->getName() ?>">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h2>
+                            <a href="details?id=<?= $product->getId() ?>">
+                                <?= $product->getName() ?>
+                            </a>
+                        </h2>
+                        <p class="product-price"><?= $product->getPrice() ?> €</p>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+        </div>
+    <?php else: ?>
+        <p>Aucun produit disponible pour cette catégorie.</p>
+    <?php endif; ?>
 </body>
 </html>
-<main class="page-produits">
-    <h2>Collection Homme</h2>
-    <div class="grille-produits">
-        <a href="details" class="produit-link">
-            <div class="produit">
-                <img src="../images/manteau.webp" alt="Manteau">
-                <h3>Manteau haute qualité</h3>
-                <p class="prix">69,00 €</p>
-                <div class="produit-icons">
-                    <span><img src="../images/favorie.png"></span>
-                    <span><img src="../images/cart.png"></span>
-                </div>
-            </div>
-        </a>
-        <a href="details" class="produit-link">
-            <div class="produit">
-                <img src="../images/manteau.webp" alt="Manteau">
-                <h3>Manteau haute qualité</h3>
-                <p class="prix">69,00 €</p>
-                <div class="produit-icons">
-                    <span><img src="../images/favorie.png"></span>
-                    <span><img src="../images/cart.png"></span>
-                </div>
-            </div>
-        </a>
-        <a href="details" class="produit-link">
-            <div class="produit">
-                <img src="../images/manteau.webp" alt="Manteau">
-                <h3>Manteau haute qualité</h3>
-                <p class="prix">69,00 €</p>
-                <div class="produit-icons">
-                    <span><img src="../images/favorie.png"></span>
-                    <span><img src="../images/cart.png"></span>
-                </div>
-            </div>
-        </a>
-        <a href="details" class="produit-link">
-            <div class="produit">
-                <img src="../images/manteau.webp" alt="Manteau">
-                <h3>Manteau haute qualité</h3>
-                <p class="prix">69,00 €</p>
-                <div class="produit-icons">
-                    <span><img src="../images/favorie.png"></span>
-                    <span><img src="../images/cart.png"></span>
-                </div>
-            </div>
-        </a>
-    </div>
-</main>

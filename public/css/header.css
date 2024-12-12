@@ -34,16 +34,6 @@ ul {
     color: #E74C3C;
 }
 
-.navbar ul {
-    display: flex;
-    gap: 20px;
-}
-
-.navbar ul li a {
-    font-size: 16px;
-    color: #333;
-    transition: color 0.3s;
-}
 
 .navbar ul li button img {
     width: 100%;
@@ -89,4 +79,67 @@ ul {
 
 .header-icons a:hover {
     transform: scale(1.2);
+}
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar ul li {
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Flèche à côté des liens "Marques" et "Type de Produit" */
+.arrow-down {
+    display: inline-block;
+    margin-left: 5px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #000; /* Couleur de la flèche */
+    vertical-align: middle;
+}
+
+/* Style des menus déroulants */
+.navbar .dropdown-menu {
+    display: none; /* Masquer par défaut */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    z-index: 1000;
+    width: 200px;
+}
+
+.navbar .dropdown-menu li {
+    padding: 5px 20px;
+}
+
+.navbar .dropdown-menu li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.navbar .dropdown-menu li a:hover {
+    background-color: #f1f1f1;
+}
+
+.navbar .dropdown:hover .dropdown-menu {
+    display: block;
 }
