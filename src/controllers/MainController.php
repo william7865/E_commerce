@@ -37,6 +37,16 @@ class MainController
         {
         $this->render('details');
     }
+    // Page Brandss
+    public function brands()
+        {
+        $this->render('brands');
+    }
+    // Page Types
+    public function types()
+        {
+        $this->render('types');
+    }
     // Page "About"
     public function about()
     {

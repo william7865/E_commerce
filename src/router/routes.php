@@ -17,6 +17,8 @@ $router->map('GET', '/woman', 'MainController#woman', 'woman');
 $router->map('GET', '/connexion', 'MainController#connexion', 'connexion');
 $router->map('GET', '/inscription', 'MainController#inscription', 'inscription');
 $router->map('GET', '/details', 'MainController#details', 'details');
+$router->map('GET', '/brands', 'MainController#brands', 'brands');
+$router->map('GET', '/types', 'MainController#types', 'types');
 
 // Retourne l'objet router
 return $router;

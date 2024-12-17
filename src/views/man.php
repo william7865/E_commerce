@@ -7,7 +7,6 @@ $productModel = new Product();
 
 // ID de la catégorie "Homme"
 $idCategory = 1;
-// Récupérer les produits de la catégorie "Homme"
 $products = $productModel->findByCategory($idCategory);
 ?>
 

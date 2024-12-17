@@ -58,7 +58,6 @@
 .social-icons a img {
     width: 25px;
     height: 25px;
-    filter: invert(1);
     transition: transform 0.3s;
 }
 

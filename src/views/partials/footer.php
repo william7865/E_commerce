@@ -27,9 +27,9 @@
             <div class="footer-section social">
                 <h3>Suivez-nous</h3>
                 <div class="social-icons">
-                    <a href="#"><img src="../images/facebook-icon.png" alt="Facebook"></a>
-                    <a href="#"><img src="../images/instagram-icon.png" alt="Instagram"></a>
-                    <a href="#"><img src="../images/twitter-icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="assets/images/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="assets/images/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="assets/images/twitter.png" alt="X"></a>
                 </div>
             </div>
         </div>

@@ -1,12 +1,13 @@
 <?php
 namespace App\Models;
+
 use App\Utils\Database;
 use PDO;
 
 class Brand extends CoreModel
 {
     private $name;
-
+    
     public function findAll()
     {
         $sql = "SELECT * FROM brand";
@@ -15,21 +16,28 @@ class Brand extends CoreModel
         $brands = $pdoStatement->fetchAll(PDO::FETCH_CLASS, Brand::class);
         return $brands;
     }
-
     public function find($id)
     {
         $sql = "SELECT * FROM brand WHERE id = " . $id;
         $pdo = Database::getPDO();
         $pdoStatement = $pdo->query($sql);
         $brand = $pdoStatement->fetchObject(Brand::class);
-        return $brand;
+        return $brand ?: null;
     }
-
+    public function getProducts()
+    {
+        $sql = "SELECT * FROM product WHERE brand_id = :brand_id";
+        $pdo = Database::getPDO();
+        $pdoStatement = $pdo->prepare($sql);
+        $pdoStatement->bindValue(':brand_id', $this->id, PDO::PARAM_INT);
+        $pdoStatement->execute();
+        
+        return $pdoStatement->fetchAll(PDO::FETCH_ASSOC);
+    }
     public function getName()
     {
         return $this->name;
     }
-
     public function setName($name)
     {
         $this->name = $name;

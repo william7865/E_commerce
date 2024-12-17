@@ -18,7 +18,7 @@ $products = $productModel->findByCategory($idCategory);
     <link rel="stylesheet" href="../css/man.css">
 </head>
 <body>
-    <h1>Collection Femme</h1>
+    <h1>Collections Femme</h1>
     <?php if (!empty($products)): ?>
         <div class="product-list">
             <?php foreach ($products as $product): ?>

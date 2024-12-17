@@ -100,7 +100,6 @@ ul {
     font-weight: 500;
 }
 
-/* Flèche à côté des liens "Marques" et "Type de Produit" */
 .arrow-down {
     display: inline-block;
     margin-left: 5px;
@@ -108,13 +107,13 @@ ul {
     height: 0;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
-    border-top: 5px solid #000; /* Couleur de la flèche */
+    border-top: 5px solid #000;
     vertical-align: middle;
 }
 
-/* Style des menus déroulants */
+
 .navbar .dropdown-menu {
-    display: none; /* Masquer par défaut */
+    display: none;
     position: absolute;
     top: 100%;
     left: 0;

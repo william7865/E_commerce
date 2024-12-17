@@ -87,25 +87,3 @@ h1 {
 .add-to-cart:hover {
     background-color: #c0392b;
 }
-
-/* Mise en page responsive */
-@media (max-width: 768px) {
-    .product-detail {
-        flex-direction: column;
-        padding: 15px;
-    }
-
-    .product-image {
-        max-width: 100%;
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
-
-    .product-info {
-        text-align: center;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-}

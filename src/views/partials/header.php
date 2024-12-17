@@ -1,11 +1,14 @@
 <?php
 require_once __DIR__ . '/../../models/Brand.php';
+require_once __DIR__ . '/../../models/Type.php';
 
 use App\Models\Brand;
+use App\Models\Type;
 
-// Récupération des marques
 $brandModel = new Brand();
 $brands = $brandModel->findAll();
+$typeModel = new Type();
+$types = $typeModel->findAll();
 ?>
 
 <header class="header">
@@ -21,16 +24,16 @@ $brands = $brandModel->findAll();
                 <a href="#">Marques <span class="arrow-down"></span></a>
                 <ul class="dropdown-menu">
                     <?php foreach ($brands as $brand): ?>
-                        <li><a href="products.php?brand_id=<?= $brand->getId() ?>"><?= $brand->getName() ?></a></li>
+                        <li><a href="brands?id=<?= $brand->getId() ?>"><?= $brand->getName() ?></a></li>
                     <?php endforeach; ?>
                 </ul>
             </li>
             <li class="dropdown">
                 <a href="#">Type de Produit <span class="arrow-down"></span></a>
                 <ul class="dropdown-menu">
-                    <li><a href="#">T-Shirts</a></li>
-                    <li><a href="#">Pantalons</a></li>
-                    <li><a href="#">Chaussures</a></li>
+                    <?php foreach ($types as $type): ?>
+                        <li><a href="types?id=<?= $type->getId() ?>"><?= $type->getName() ?></a></li>
+                    <?php endforeach; ?>
                 </ul>
             </li>
             <li><input type="text" placeholder="Rechercher"></li>
