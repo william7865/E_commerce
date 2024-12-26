@@ -16,6 +16,12 @@ $types = $typeModel->findAll();
     <div class="logo">
         <h1><a href="./">KELEN <span>PARIS</span></a></h1>
     </div>
+    
+    <!-- Bouton menu burger -->
+    <button class="menu-toggle" aria-label="Ouvrir le menu">
+        <span class="burger-icon"></span>
+    </button>
+
     <nav class="navbar">
         <ul>
             <li><a href="woman">Femme</a></li>
@@ -40,8 +46,20 @@ $types = $typeModel->findAll();
             <li><button><img src="../assets/images/loupe.png"></button></li>
         </ul>
     </nav>
+
     <div class="header-icons">
         <a href="connexion"><img src="../assets/images/user.png" alt="Profil"></a>
         <a href="panier"><img src="../assets/images/cart.png" alt="Panier"></a>
     </div>
 </header>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navbar = document.querySelector(".navbar");
+
+        menuToggle.addEventListener("click", function () {
+            navbar.classList.toggle("active");
+        });
+    });
+</script>
